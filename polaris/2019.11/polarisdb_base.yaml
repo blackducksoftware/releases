@@ -712,7 +712,7 @@ spec:
               fieldPath: metadata.namespace
         - name: DNSPORT
           value: "8600"
-        image: consul:1.0.0
+        image: docker.io/consul:1.0.0
         imagePullPolicy: Always
         livenessProbe:
           exec:
@@ -1513,7 +1513,7 @@ spec:
         env:
         - name: ENVIRONMENT_NAME
           value: ${ENVIRONMENT_NAME}
-        image: busybox:latest
+        image: docker.io/busybox:1
         name: bootstrap-download-server
         volumeMounts:
         - mountPath: /opt/data
